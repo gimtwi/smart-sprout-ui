@@ -1,0 +1,402 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #808080;
+  --item-bg: #514646;
+  --item-bg-active: #534c4c;
+  --header-txt: #badc58;
+  --header-txt-active: #b8d463;
+}
+
+.icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.card-flex {
+  display: grid;
+  place-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  font-size: 3rem;
+  padding: 0 2rem;
+  border-radius: 0 0 90px 0;
+  background-color: var(--header-txt);
+  color: var(--item-bg);
+}
+
+.plus {
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+  height: min-content;
+  width: min-content;
+  border-radius: 50%;
+}
+
+.plus:active {
+  background-color: var(--header-txt-active);
+}
+
+.plus .plus-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--item-bg);
+}
+
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.sprout-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: min(100%, 15rem);
+  height: min(100%, 25rem);
+  background-color: var(--item-bg);
+  border-radius: 25px;
+}
+
+.sprout-item:active {
+  background-color: var(--item-bg-active);
+}
+
+.sprout-item h2,
+.sprout-item h3,
+.sprout-item .in-row {
+  color: var(--header-txt);
+}
+
+.in-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: min(20vw, 15rem);
+}
+
+.item-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.font-green {
+  color: var(--header-txt);
+  font-size: 2em;
+  padding: 1rem;
+}
+
+/* PLANTS */
+
+.tomato {
+  background-color: transparent;
+  background-image: url("../../public/svg/tomato.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.pepper {
+  background-color: transparent;
+  background-image: url("../../public/svg/pepper.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.broccoli {
+  background-color: transparent;
+  background-image: url("../../public/svg/broccoli.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.avocado {
+  background-color: transparent;
+  background-image: url("../../public/svg/avocado.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.apple {
+  background-color: transparent;
+  background-image: url("../../public/svg/apple.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.pineapple {
+  background-color: transparent;
+  background-image: url("../../public/svg/pineapple.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.turnip {
+  background-color: transparent;
+  background-image: url("../../public/svg/turnip.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.onion {
+  background-color: transparent;
+  background-image: url("../../public/svg/onion.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.carrot {
+  background-color: transparent;
+  background-image: url("../../public/svg/carrot.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.pomegranate {
+  background-color: transparent;
+  background-image: url("../../public/svg/pomegranate.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.strawberry {
+  background-color: transparent;
+  background-image: url("../../public/svg/strawberry.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.orange {
+  background-color: transparent;
+  background-image: url("../../public/svg/orange.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.orange {
+  background-color: transparent;
+  background-image: url("../../public/svg/orange.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.raspberry {
+  background-color: transparent;
+  background-image: url("../../public/svg/raspberry.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.peas {
+  background-color: transparent;
+  background-image: url("../../public/svg/peas.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.cabbage {
+  background-color: transparent;
+  background-image: url("../../public/svg/cabbage.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.cherries {
+  background-color: transparent;
+  background-image: url("../../public/svg/cherries.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.banana {
+  background-color: transparent;
+  background-image: url("../../public/svg/banana.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.pumpkin {
+  background-color: transparent;
+  background-image: url("../../public/svg/pumpkin.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.eggplant {
+  background-color: transparent;
+  background-image: url("../../public/svg/eggplant.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.artichoke {
+  background-color: transparent;
+  background-image: url("../../public/svg/artichoke.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.kiwi {
+  background-color: transparent;
+  background-image: url("../../public/svg/kiwi.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.watermelon {
+  background-color: transparent;
+  background-image: url("../../public/svg/watermelon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.pear {
+  background-color: transparent;
+  background-image: url("../../public/svg/pear.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.olives {
+  background-color: transparent;
+  background-image: url("../../public/svg/olives.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.grapes {
+  background-color: transparent;
+  background-image: url("../../public/svg/grapes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.corn {
+  background-color: transparent;
+  background-image: url("../../public/svg/corn.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.herb {
+  background-color: transparent;
+  background-image: url("../../public/svg/herb.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
