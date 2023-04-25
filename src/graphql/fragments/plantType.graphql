@@ -1,0 +1,9 @@
+fragment Plant on PlantType {
+  _id
+  type
+  name
+  img
+  humidity
+  brightness
+  temperature
+}

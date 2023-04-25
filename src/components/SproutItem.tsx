@@ -1,33 +1,15 @@
 import Link from "next/link";
 import React from "react";
+import { PlantType } from "src/generated/graphql";
 
 interface Props {
-  id?: string;
-  type?: "Vegetable" | "Fruit" | "Berry" | "Herb";
-  name?: string;
-  img?: string;
-  humidity?: number;
-  brightness?: number;
-  temperature?: number;
-  fan?: number;
-  watering?: number;
-  lighting?: number;
+  data: PlantType;
 }
 
-export const SproutItem: React.FC<Props> = ({
-  id,
-  type,
-  name,
-  img,
-  humidity,
-  brightness,
-  temperature,
-  fan,
-  watering,
-  lighting,
-}) => {
+export const SproutItem: React.FC<Props> = ({ data }) => {
+  const { _id, type, name, img, humidity, brightness, temperature } = data;
   return (
-    <Link passHref href={`/plant/${id}`} className="sprout-item">
+    <Link passHref href={`/plant/${_id}`} className="sprout-item">
       <h2>{type}</h2>
       <h3>{name}</h3>
       <div className={img}></div>
@@ -94,7 +76,7 @@ export const SproutItem: React.FC<Props> = ({
         </div>
       ) : null}
 
-      {fan ? (
+      {/* {fan ? (
         <div className="in-row">
           <svg
             className="icon"
@@ -107,9 +89,9 @@ export const SproutItem: React.FC<Props> = ({
           </svg>
           <p>{fan}%</p>
         </div>
-      ) : null}
+      ) : null} */}
 
-      {watering ? (
+      {/* {watering ? (
         <div className="in-row">
           <svg
             className="icon"
@@ -150,8 +132,8 @@ export const SproutItem: React.FC<Props> = ({
           </svg>
           <p>{watering}%</p>
         </div>
-      ) : null}
-      {lighting ? (
+      ) : null} */}
+      {/* {lighting ? (
         <div className="in-row">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +151,7 @@ export const SproutItem: React.FC<Props> = ({
           </svg>
           <p>{lighting}%</p>
         </div>
-      ) : null}
+      ) : null} */}
     </Link>
   );
 };

@@ -1,0 +1,5 @@
+query FindPlantById($findPlantByIdId: String!) {
+  findPlantById(id: $findPlantByIdId) {
+    ...Plant
+  }
+}

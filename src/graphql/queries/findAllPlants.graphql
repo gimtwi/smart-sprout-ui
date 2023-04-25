@@ -1,0 +1,5 @@
+query FindAllPlants {
+  findAllPlants {
+    ...Plant
+  }
+}

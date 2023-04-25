@@ -3,19 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "ui": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "gen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
     "framer-motion": "^10.12.4",
+    "graphql": "16.6.0",
     "next": "^13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@apollo/client": "3.7.12",
+    "@graphql-codegen/cli": "3.3.1",
+    "@graphql-codegen/typescript": "3.0.4",
+    "@graphql-codegen/typescript-operations": "3.0.4",
+    "@graphql-codegen/typescript-react-apollo": "3.3.7",
     "@types/eslint": "^8.21.3",
     "@types/node": "^18.15.5",
     "@types/react": "^18.0.28",
@@ -24,7 +31,7 @@
     "@typescript-eslint/parser": "^5.56.0",
     "eslint": "^8.36.0",
     "eslint-config-next": "^13.2.4",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.4"
   },
   "ct3aMetadata": {
     "initVersion": "7.11.0"

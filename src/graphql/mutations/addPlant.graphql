@@ -1,0 +1,5 @@
+mutation AddPlant($input: PlantInput!) {
+  addPlant(input: $input) {
+    ...Plant
+  }
+}

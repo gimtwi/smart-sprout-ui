@@ -1,11 +1,19 @@
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 import { Layout } from "src/components/Layout";
+import { useFindPlantByIdQuery } from "src/generated/graphql";
 
 const PlantID: NextPage = () => {
   const router = useRouter();
 
-  if (!router.query.id || router.query.id === "undefined") {
+  let id: string = router.query.id as string;
+
+  const { data: plant, error } = useFindPlantByIdQuery({
+    variables: { findPlantByIdId: id },
+  });
+
+  if (!plant || error) {
+    console.log(error);
     return (
       <div>
         <Layout btn="back">
