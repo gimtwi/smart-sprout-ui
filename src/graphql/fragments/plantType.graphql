@@ -6,4 +6,7 @@ fragment Plant on PlantType {
   humidity
   brightness
   temperature
+  watering
+  lighting
+  fan
 }

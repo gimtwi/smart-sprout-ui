@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <div className="home-page">
           {allPlants?.findAllPlants.length
             ? allPlants?.findAllPlants.map((plant: PlantType) => (
-                <SproutItem data={plant} />
+                <SproutItem key={plant._id} data={plant} />
               ))
             : null}
         </div>

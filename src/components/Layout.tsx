@@ -30,7 +30,7 @@ export const Layout: React.FC<Props> = ({ children, btn }) => {
         <div className="header">
           <p>SmartSprout</p>
           {btn === "plus" ? (
-            <Link passHref href={"/"} className="plus">
+            <Link passHref href={"/add"} className="plus">
               <i>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

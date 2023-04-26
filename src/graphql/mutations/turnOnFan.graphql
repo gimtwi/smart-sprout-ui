@@ -1,0 +1,3 @@
+mutation TurnOnFan($turnOnFanId: String!) {
+  turnOnFan(id: $turnOnFanId)
+}

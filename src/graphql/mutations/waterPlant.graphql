@@ -1,0 +1,3 @@
+mutation WaterPlant($waterPlantId: String!) {
+  waterPlant(id: $waterPlantId)
+}

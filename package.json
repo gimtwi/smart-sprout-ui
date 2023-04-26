@@ -10,6 +10,7 @@
     "gen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
+    "formik": "2.2.9",
     "framer-motion": "^10.12.4",
     "graphql": "16.6.0",
     "next": "^13.2.4",
