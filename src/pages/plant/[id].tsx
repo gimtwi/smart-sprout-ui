@@ -78,7 +78,7 @@ const PlantID: NextPage = () => {
     <div>
       <Layout btn="back">
         <div className="item-page max-width">
-          <div className="item-field">
+          <div className="item-field space">
             <div className="item-page">
               <div className="item-field">
                 <label htmlFor="name">Name:</label>

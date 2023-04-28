@@ -91,6 +91,7 @@ button {
   justify-content: center;
   gap: 1rem;
   margin: 1rem;
+  width: 100%;
 }
 
 .sprout-item {
@@ -125,7 +126,6 @@ button {
 .item-page {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 1em;
   gap: 1em;
 }
@@ -135,6 +135,10 @@ button {
   flex-direction: row;
   gap: 1em;
   font-size: 1.125rem;
+}
+
+.space {
+  justify-content: space-between;
 }
 
 .item-switch {
@@ -152,7 +156,7 @@ button {
 
 .max-width {
   position: relative;
-  width: min(90vw, 20rem);
+  width: min(90vw, 50rem);
 }
 
 .delete-btn {
@@ -278,6 +282,7 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  width: min(90vw, 50rem);
 }
 
 .plant-form button {
