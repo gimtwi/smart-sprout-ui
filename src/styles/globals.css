@@ -40,7 +40,6 @@ button {
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .header {
@@ -56,6 +55,7 @@ button {
   border-radius: 0 0 90px 0;
   background-color: var(--header-txt);
   color: var(--item-bg);
+  z-index: 1;
 }
 
 .content {
@@ -63,7 +63,6 @@ button {
   justify-content: center;
   padding-top: 6em;
   width: 100vw;
-  height: 100vh;
 }
 
 .plus {
@@ -157,9 +156,17 @@ button {
 .max-width {
   position: relative;
   width: min(90vw, 50rem);
+  min-height: max-content;
 }
 
-.delete-btn {
+.flex-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5em;
+}
+
+/*.delete-btn {
   position: absolute;
   right: 1em;
   bottom: 5em;
@@ -169,7 +176,7 @@ button {
   position: absolute;
   left: 1em;
   bottom: 5em;
-}
+}*/
 
 .delete-btn,
 .edit-btn {
