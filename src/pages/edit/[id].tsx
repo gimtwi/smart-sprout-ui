@@ -6,7 +6,6 @@ import { Layout } from "src/components/Layout";
 import {
   EditPlantInput,
   FindAllPlantsDocument,
-  PlantInput,
   PlantTypes,
   SvgUsed,
   useEditPlantMutation,
@@ -57,9 +56,9 @@ const EditPlant: NextPage = () => {
 
       return errors;
     },
-    onSubmit: async (values: PlantInput) => {
+    onSubmit: async (values: EditPlantInput) => {
       await editPlant({
-        variables: { input: { _id: id, ...values } },
+        variables: { input: { ...values } },
         refetchQueries: [{ query: FindAllPlantsDocument }],
       })
         .catch((error) => {
